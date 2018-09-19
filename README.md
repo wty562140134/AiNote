@@ -17,4 +17,4 @@ conda env list
 ### 切换虚拟环境
 source activate <虚拟环境名>
 ### 注销虚拟环境
-source deactivate <虚拟环境名>
+source deactivate
