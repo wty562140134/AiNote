@@ -68,11 +68,11 @@
 ### gpu版
 先查看可安装的版本
 
-    $ conda install tensorflow-gpu
+    $ conda install tensorflow-gpu==<需要安装的版本号>
 ### cpu版
 先查看可安装的版本
 
-    $ conda install tensorflow-cpu
+    $ conda install tensorflow-cpu==<需要安装的版本号>
 
 ## 查看显卡
 ### 查看显卡使用
