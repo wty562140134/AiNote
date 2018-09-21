@@ -1,5 +1,7 @@
 # AiNote
 
+安装文档[https://github.com/EthanGuan/Dl-environ/blob/master/instruction.md]
+
 ## opencv安装后如果报错
 ### terminate called after throwing an instance of 'cv::Exception'<br>
 ###   what():  OpenCV(3.4.2) /home/arthas/opencv/modules/highgui/src/window.cpp:632: error: (-2:Unspecified error) The function is not implemented. Rebuild the library with Windows, GTK+ 2.x or Carbon support. If you are on Ubuntu or Debian, install libgtk2.0-dev and pkg-config, then re-run cmake or configure script in function 'cvShowImage'<br>
