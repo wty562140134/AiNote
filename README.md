@@ -21,6 +21,8 @@
     $ sudo apt-get install libgtk2.0-dev libavcodec-dev libavformat-dev libtiff5-dev libswscale-dev libjasper-dev
     $ sudo apt-get install pkg-config
 
+## pip使用一些问题
+
 ### pip提示You are using pip version 10.0.1, however version 18.0 is available.You should consider upgrading via the 'pip install --upgrade pip' command.<br>
     $ pip install --upgrade pip
 
@@ -28,17 +30,32 @@
     $ pip install msgpack-python
     $ pip install msgpack
 
+## darknet相关问题
+
 ### darknet报错：./darknet: error while loading shared libraries: libopencv_highgui.so.3.4: cannot open shared object file: No such file or directory
     $ cd /usr/local/cuda-9.2/
     $ sudo ldconfig
 
-## 使用conda WARNING
+## 使用conda相关问题
+### 使用conda WARNING
 ==> WARNING: A newer version of conda exists. <==<br>
   current version: 4.5.4<br>
   latest version: 4.5.11<br>
 使用命令升级<br>
 
     $ conda update -n base conda
+
+### conda虚拟环境
+#### -n是指定虚拟环境名
+    $ conda create -n <虚拟环境名> python=<指定python版本>
+#### 删除虚拟环境
+    $ conda remove -n <虚拟环境名> --all
+#### 查看所有虚拟环境
+    $ conda env list
+#### 切换虚拟环境
+    $ source activate <虚拟环境名>
+#### 注销虚拟环境
+    $ source deactivate
 
 ## pytorch安装
 建议在虚拟环境下安装<br>
@@ -52,19 +69,8 @@
 ### cpu版
     $ conda install tensorflow-cpu
 
-## 查看显卡使用
+## 查看显卡
+### 查看显卡使用
     $ nvidia-smi
 ### 使用witch命令查看显卡使用-n用于指定刷新频率
     $ watch -n 1 nvidia-smi
-
-## anaconda起虚拟环境 
-### -n是指定虚拟环境名
-    $ conda create -n <虚拟环境名> python=<指定python版本>
-### 删除虚拟环境
-    $ conda remove -n <虚拟环境名> --all
-### 查看所有虚拟环境
-    $ conda env list
-### 切换虚拟环境
-    $ source activate <虚拟环境名>
-### 注销虚拟环境
-    $ source deactivate
