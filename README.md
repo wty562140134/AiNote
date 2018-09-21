@@ -57,6 +57,33 @@
 
 ### conda查看包版本
     $ conda search <查找包的名字>
+    
+## caffe安装问题
+首先进入到caffe/python中执行
+
+    $ for req in $(cat requirements.txt); do pip install $req; done
+安装一些依赖包之后进行一下操作
+    
+    $ cd caffe
+    $ mkdir build
+    $ cd build
+    $ cmake ..
+    $ make all -j8
+执行完以上命令后先别执行make install,先回到caffe根路径
+
+    $ make pycaffe
+    $ make pytest
+遇到报错：raise ValueError, "Can't create weekday with n == 0"执行
+
+    $ pip install python-dateutil --upgrade
+继续执行make pytest,遇到ImportError: No module named 'pydotplus'和ImportError: No module named 'pydot'执行
+    
+    $ pip install pydotplus
+若有其他包未安装报错同上面方法一样找到相应的包安装，直到所有包安装完成后在执行
+
+    $ make install
+    $ make runtest
+    
 
 ## pytorch安装
 建议在虚拟环境下安装<br>
