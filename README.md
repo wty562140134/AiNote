@@ -31,11 +31,22 @@ pip install msgpack<br>
 cd /usr/local/cuda-9.2/<br>
 sudo ldconfig<br>
 
+## pytorch安装
+建议在虚拟环境下安装<br>
+[访问pytorch官网选择系统相应的版本选项后使用命令进行安装](https://pytorch.org/)<br>
+
+## tensonflow安装
+建议在虚拟环境下安装<br>
+使用pip进行安装的很有可能会报error while loading shared libraries: libopencv_highgui.so.x.x: cannot open shared object file: No such file or directory的错，并且去/usr/local/cuda-9.2目录下使用sudo ldconfig命令也不一定有用，使用cond可以很好的避免这个问题<br>
+### gpu版
+conda install tensorflow-gpu<br>
+### cpu版
+conda install tensorflow-cpu<br>
+
 ## 查看显卡使用
 nvidia-smi<br>
 ### 使用witch命令查看显卡使用-n用于指定刷新频率
 watch -n 1 nvidia-smi<br>
-
 
 ## anaconda起虚拟环境 
 ### -n是指定虚拟环境名
