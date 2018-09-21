@@ -8,7 +8,9 @@
 需要将opencv卸载并安装相应依赖库后从新安装opencv
 
 ### opencv卸载
-cd opencv/build<br>
+
+$ cd opencv/build
+
 sudo make uninstall <br>
 cd ..<br>
 sudo rm -r build<br>
@@ -36,6 +38,7 @@ sudo ldconfig<br>
   current version: 4.5.4<br>
   latest version: 4.5.11<br>
 使用命令升级<br>
+
     $ conda update -n base conda
 
 ## pytorch安装
