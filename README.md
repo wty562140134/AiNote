@@ -18,6 +18,10 @@ sudo apt-get install gcc g++ cmake pkg-config build-essential
 sudo apt-get install libgtk2.0-dev libavcodec-dev libavformat-dev libtiff5-dev libswscale-dev libjasper-dev
 sudo apt-get install pkg-config
 
+### darknet报错：./darknet: error while loading shared libraries: libopencv_highgui.so.3.4: cannot open shared object file: No such file or directory
+cd /usr/local/cuda-9.2/
+sudo ldconfig
+
 ## 查看显卡使用
 nvidia-smi
 ### 使用witch命令查看显卡使用-n用于指定刷新频率
