@@ -18,6 +18,13 @@ sudo apt-get install gcc g++ cmake pkg-config build-essential<br>
 sudo apt-get install libgtk2.0-dev libavcodec-dev libavformat-dev libtiff5-dev libswscale-dev libjasper-dev<br>
 sudo apt-get install pkg-config<br>
 
+### pip提示You are using pip version 10.0.1, however version 18.0 is available.You should consider upgrading via the 'pip install --upgrade pip' command.<br>
+pip install --upgrade pip<br>
+
+### 用pip安装opencv报错：distributed 1.21.8 requires msgpack, which is not installed.<br>
+pip install msgpack-python<br>
+pip install msgpack<br> 
+
 ### darknet报错：./darknet: error while loading shared libraries: libopencv_highgui.so.3.4: cannot open shared object file: No such file or directory
 cd /usr/local/cuda-9.2/<br>
 sudo ldconfig<br>
