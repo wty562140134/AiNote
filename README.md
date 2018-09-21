@@ -1,4 +1,4 @@
-# AiNote
+# Ubuntu 16.04.1 LTS AI环境搭建
 
 [cuda,cudnn,Anaconda,OpenCV,Darknet,caffe安装文档](https://github.com/EthanGuan/Dl-environ/blob/master/instruction.md)
 
