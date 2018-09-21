@@ -1,6 +1,6 @@
 # AiNote
 
-安装文档(https://github.com/EthanGuan/Dl-environ/blob/master/instruction.md)
+[安装文档](https://github.com/EthanGuan/Dl-environ/blob/master/instruction.md)
 
 ## opencv安装后如果报错
 ### terminate called after throwing an instance of 'cv::Exception'<br>
