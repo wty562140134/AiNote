@@ -9,29 +9,28 @@
 
 ### opencv卸载
 
-$ cd opencv/build
-
-sudo make uninstall <br>
-cd ..<br>
-sudo rm -r build<br>
-sudo rm -r /usr/local/include/opencv2 /usr/local/include/opencv /usr/include/opencv /usr/include/opencv2 /usr/local/share/opencv /usr/local/share/OpenCV /usr/share/opencv /usr/share/OpenCV /usr/local/bin/opencv* /usr/local/lib/libopencv*<br>
-sudo apt-get --purge remove opencv-doc opencv-data python-opencv<br>
+    $ cd opencv/build
+    $ sudo make uninstall 
+    $ cd ..
+    $s udo rm -r build
+    $ sudo rm -r /usr/local/include/opencv2 /usr/local/include/opencv /usr/include/opencv /usr/include/opencv2 /usr/local/share/opencv /usr/local/share/OpenCV /usr/share/opencv /usr/share/OpenCV /usr/local/bin/opencv* /usr/local/lib/libopencv*
+    $ sudo apt-get --purge remove opencv-doc opencv-data python-opencv
 
 ### opencv依赖
-sudo apt-get install gcc g++ cmake pkg-config build-essential<br>
-sudo apt-get install libgtk2.0-dev libavcodec-dev libavformat-dev libtiff5-dev libswscale-dev libjasper-dev<br>
-sudo apt-get install pkg-config<br>
+    $ sudo apt-get install gcc g++ cmake pkg-config build-essential
+    $ sudo apt-get install libgtk2.0-dev libavcodec-dev libavformat-dev libtiff5-dev libswscale-dev libjasper-dev
+    $ sudo apt-get install pkg-config
 
 ### pip提示You are using pip version 10.0.1, however version 18.0 is available.You should consider upgrading via the 'pip install --upgrade pip' command.<br>
-pip install --upgrade pip<br>
+    $ pip install --upgrade pip
 
 ### 用pip安装opencv报错：distributed 1.21.8 requires msgpack, which is not installed.<br>
-pip install msgpack-python<br>
-pip install msgpack<br> 
+    $ pip install msgpack-python
+    $ pip install msgpack
 
 ### darknet报错：./darknet: error while loading shared libraries: libopencv_highgui.so.3.4: cannot open shared object file: No such file or directory
-cd /usr/local/cuda-9.2/<br>
-sudo ldconfig<br>
+    $ cd /usr/local/cuda-9.2/
+    $ sudo ldconfig
 
 ## 使用conda WARNING
 ==> WARNING: A newer version of conda exists. <==<br>
@@ -49,23 +48,23 @@ sudo ldconfig<br>
 建议在虚拟环境下安装<br>
 使用pip进行安装的很有可能会报error while loading shared libraries: libopencv_highgui.so.x.x: cannot open shared object file: No such file or directory的错，并且去/usr/local/cuda-9.2目录下使用sudo ldconfig命令也不一定有用，使用cond可以很好的避免这个问题<br>
 ### gpu版
-conda install tensorflow-gpu<br>
+    $ conda install tensorflow-gpu
 ### cpu版
-conda install tensorflow-cpu<br>
+    $ conda install tensorflow-cpu
 
 ## 查看显卡使用
-nvidia-smi<br>
+    $ nvidia-smi
 ### 使用witch命令查看显卡使用-n用于指定刷新频率
-watch -n 1 nvidia-smi<br>
+    $ watch -n 1 nvidia-smi
 
 ## anaconda起虚拟环境 
 ### -n是指定虚拟环境名
-conda create -n <虚拟环境名> python=<指定python版本><br>
+    $ conda create -n <虚拟环境名> python=<指定python版本>
 ### 删除虚拟环境
-conda remove -n <虚拟环境名> --all<br>
+    $ conda remove -n <虚拟环境名> --all
 ### 查看所有虚拟环境
-conda env list<br>
+    $ conda env list
 ### 切换虚拟环境
-source activate <虚拟环境名><br>
+    $ source activate <虚拟环境名>
 ### 注销虚拟环境
-source deactivate<br>
+    $ source deactivate
