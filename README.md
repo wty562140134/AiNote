@@ -8,7 +8,6 @@
 需要将opencv卸载并安装相应依赖库后从新安装opencv
 
 ### opencv卸载
-
     $ cd opencv/build
     $ sudo make uninstall 
     $ cd ..
@@ -22,7 +21,6 @@
     $ sudo apt-get install pkg-config
 
 ## pip使用一些问题
-
 ### pip提示You are using pip version 10.0.1, however version 18.0 is available.You should consider upgrading via the 'pip install --upgrade pip' command.<br>
     $ pip install --upgrade pip
 
