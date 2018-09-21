@@ -31,6 +31,16 @@ pip install msgpack<br>
 cd /usr/local/cuda-9.2/<br>
 sudo ldconfig<br>
 
+## 使用conda WARNING
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.5.4
+  latest version: 4.5.11
+
+Please update conda by running
+
+    $ conda update -n base conda
+
+
 ## pytorch安装
 建议在虚拟环境下安装<br>
 [访问pytorch官网选择系统相应的版本选项后使用命令进行安装](https://pytorch.org/)<br>
