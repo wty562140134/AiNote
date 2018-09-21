@@ -35,7 +35,7 @@ sudo ldconfig<br>
 ==> WARNING: A newer version of conda exists. <==<br>
   current version: 4.5.4<br>
   latest version: 4.5.11<br>
-使用命令升级
+使用命令升级<br>
     $ conda update -n base conda
 
 ## pytorch安装
