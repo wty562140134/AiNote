@@ -1,6 +1,6 @@
 # AiNote
 
-[cuda，cudnn,Anaconda,OpenCV,Darknet,caffe安装文档](https://github.com/EthanGuan/Dl-environ/blob/master/instruction.md)
+[cuda,cudnn,Anaconda,OpenCV,Darknet,caffe安装文档](https://github.com/EthanGuan/Dl-environ/blob/master/instruction.md)
 
 ## opencv安装后如果报错
 ### terminate called after throwing an instance of 'cv::Exception'<br>
