@@ -59,7 +59,13 @@
     $ conda search <查找包的名字>
     
 ## caffe安装问题
-首先进入到caffe/python中执行
+首先按照安装文档走一遍，如果不行
+    
+    $ cd caffe/build
+    $ make uninstall
+    $ cd ..
+    $ rm -rf build
+然后进入到caffe/python中执行
 
     $ for req in $(cat requirements.txt); do pip install $req; done
 安装一些依赖包之后进行一下操作
@@ -73,9 +79,15 @@
 
     $ make pycaffe
     $ make pytest
-遇到报错：raise ValueError, "Can't create weekday with n == 0"执行
+import caffe遇到报错：raise ValueError, "Can't create weekday with n == 0"执行
 
     $ pip install python-dateutil --upgrade
+caffe.set_mode_gpu()报错AttributeError: module 'caffe' has no attribute 'set_mode_gpu'
+
+    $ cd caffe/python
+    $ python
+    >>> import caffe
+    >>> caffe.set_mode_gpu()
 继续执行make pytest,遇到ImportError: No module named 'pydotplus'和ImportError: No module named 'pydot'执行
     
     $ pip install pydotplus
@@ -83,6 +95,10 @@
 
     $ make install
     $ make runtest
+安装成功后
+
+    >>> import caffe
+    >>> caffe.set_mode_gpu() # 设置为gpu模式
     
 
 ## pytorch安装
