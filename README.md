@@ -51,9 +51,15 @@
 #### 查看所有虚拟环境
     $ conda env list
 #### 切换虚拟环境
+##### linux
     $ source activate <虚拟环境名>
+##### windows  
+    $ activate <虚拟环境名>
 #### 注销虚拟环境
+##### linux
     $ source deactivate
+##### windows
+    $ deactivate
 
 ### conda查看包版本
     $ conda search <查找包的名字>
